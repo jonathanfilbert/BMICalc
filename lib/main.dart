@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:bmi_calc/App.dart';
+import 'ResultsScreen.dart';
+import 'package:flutter/services.dart';
 
 void main() => runApp(Main());
 
@@ -15,11 +17,10 @@ class Main extends StatelessWidget {
         ),
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("BMI Calculator"),
-          centerTitle: true,
+        body: Padding(
+          padding: const EdgeInsets.only(top: 40.0),
+          child: ResultScreen(),
         ),
-        body: App(),
       ),
     );
   }

@@ -269,7 +269,7 @@ class _AppState extends State<App> {
           color: Colors.pink,
           child: Center(
             child: Text(
-              "SUBMIT",
+              "CALCULATE",
               style: TextStyle(fontSize: 20.0),
             ),
           ),
