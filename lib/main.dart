@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bmi_calc/App.dart';
-import 'ResultsScreen.dart';
-import 'package:flutter/services.dart';
+import 'package:bmi_calc/Routes.dart';
 
 void main() => runApp(Main());
 
@@ -16,12 +14,8 @@ class Main extends StatelessWidget {
           body1: TextStyle(color: Colors.white),
         ),
       ),
-      home: Scaffold(
-        body: Padding(
-          padding: const EdgeInsets.only(top: 40.0),
-          child: ResultScreen(),
-        ),
-      ),
+      routes: Routes.routes,
+      initialRoute: '/',
     );
   }
 }
